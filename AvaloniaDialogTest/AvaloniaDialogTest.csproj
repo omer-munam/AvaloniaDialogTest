@@ -14,7 +14,6 @@
 	<ItemGroup>
 		<RuntimeHostConfigurationOption Include="AvaloniaUI.Xpf.LicenseKey" Value="AQAAAF4AAAAfiwgAAAAAAAADY2RgYPgPBTyPGmY4FpekFiUCGTPu6YswQAEzELPmZOaVVrDmJibnF7OXZ+al5JcXg8SZKwrSeIBYN7EgU7c4IzMXzAEqSMsvyi0GAKnfP8hfAAAAAAEAACMaIi+xHGQxmFgiN7XD5I6wJCjUd0fD9XV8v2Pvd1cM154Mo2JhsOz3HMLaa+ssbLO+hZ6brbIRzQgQ+joQLk5wLym3SBqhOVbUZSN4O3YZE4OxB1bfIGVt9wWL+STi57O78B8oaHtZ2sMdWm88VUBlo84ioERcX1+ybxfuxzdzq74vRfG8PKgXvQqvB3bHn3fLqXizpDZQ8y80CnBhXdkYMHMw6KO1HSQwEhX4iU978pmluT673C6Ia3WcWDurzwFIeaKcuQ3trpeXomowA0mATvUzSE3T7gw5Io8b7fHzDh270SAHK4FfsMkeavtJ63ZT4BYCAr+nBi5uCJqOFoE=" />
 		<PackageReference Include="WebViewControl-WPF" Version="3.120.2" />
-		<PackageReference Include="CefSharp.Wpf.NETCore" Version="121.3.70" />
 	</ItemGroup>
 	
 </Project>
