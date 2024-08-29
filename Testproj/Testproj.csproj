@@ -7,4 +7,7 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+	<ItemGroup>
+		<Resource Include="Resources\ADOHD.png" />
+	</ItemGroup>
 </Project>

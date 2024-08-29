@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AvaloniaDialogTest"
         mc:Ignorable="d"
+        xmlns:webview1="clr-namespace:WebViewControl;assembly=WebViewControl"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <webview1:WebView x:Name="webView" />
     </Grid>
 </Window>

@@ -8,7 +8,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Testproj;
 
 namespace AvaloniaDialogTest
 {
@@ -20,7 +19,6 @@ namespace AvaloniaDialogTest
         public MainWindow()
         {
             InitializeComponent();
-            Class1 instance = new Class1();
         }
     }
 }
