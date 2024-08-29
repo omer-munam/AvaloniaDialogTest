@@ -16,9 +16,31 @@ namespace AvaloniaDialogTest
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool _IsDragging;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void TextBlockOnDrop(object sender, DragEventArgs e)
+        {
+            var data = e.Data;
+            TextBlock.Text += data.ToString();
+        }
+
+        private void OnPreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            if (_IsDragging)
+                return;
+            var treeViewItem = sender as TreeViewItem;
+
+            if (e.LeftButton == MouseButtonState.Pressed && treeViewItem != null)
+            {
+                _IsDragging = true;
+                DragDrop.DoDragDrop(treeViewItem, treeViewItem.Header, DragDropEffects.Copy);
+                _IsDragging = false;
+            }
         }
     }
 }

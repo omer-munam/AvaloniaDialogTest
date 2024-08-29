@@ -5,9 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AvaloniaDialogTest"
         mc:Ignorable="d"
-        xmlns:webview1="clr-namespace:WebViewControl;assembly=WebViewControl"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <webview1:WebView x:Name="webView" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TreeView Name="TreeView" Grid.Column="0" Background="Gainsboro">
+            <TreeViewItem Header="Level 1" IsExpanded="True" PreviewMouseMove="OnPreviewMouseMove">
+                <TreeViewItem Header="Level 2.1" PreviewMouseMove="OnPreviewMouseMove"/>
+                <TreeViewItem Header="Level 2.2" IsExpanded="True" PreviewMouseMove="OnPreviewMouseMove">
+                    <TreeViewItem Header="Level 3.1" PreviewMouseMove="OnPreviewMouseMove"/>
+                    <TreeViewItem Header="Level 3.2" PreviewMouseMove="OnPreviewMouseMove"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Level 2.3" PreviewMouseMove="OnPreviewMouseMove"/>
+            </TreeViewItem>
+        </TreeView>
+        <TextBox Name="TextBlock" AllowDrop="True" Drop="TextBlockOnDrop" Grid.Column="1" Background="Beige">Drop Here</TextBox>
     </Grid>
 </Window>
