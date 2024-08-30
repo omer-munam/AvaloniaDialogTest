@@ -16,19 +16,12 @@ namespace AvaloniaDialogTest
     /// </summary>
     public partial class MainWindow : Window
     {
-        private bool _IsDragging;
+        private bool _IsDragging = false;
 
         public MainWindow()
         {
             InitializeComponent();
         }
-
-        private void TextBlockOnDrop(object sender, DragEventArgs e)
-        {
-            var data = e.Data;
-            TextBlock.Text += data.ToString();
-        }
-
         private void OnPreviewMouseMove(object sender, MouseEventArgs e)
         {
             if (_IsDragging)

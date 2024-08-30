@@ -7,11 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <TreeView Name="TreeView" Grid.Column="0" Background="Gainsboro">
+        <TreeView Name="TreeView"  Grid.Column="0" Background="Gainsboro">
             <TreeViewItem Header="Level 1" IsExpanded="True" PreviewMouseMove="OnPreviewMouseMove">
                 <TreeViewItem Header="Level 2.1" PreviewMouseMove="OnPreviewMouseMove"/>
                 <TreeViewItem Header="Level 2.2" IsExpanded="True" PreviewMouseMove="OnPreviewMouseMove">
@@ -21,6 +17,5 @@
                 <TreeViewItem Header="Level 2.3" PreviewMouseMove="OnPreviewMouseMove"/>
             </TreeViewItem>
         </TreeView>
-        <TextBox Name="TextBlock" AllowDrop="True" Drop="TextBlockOnDrop" Grid.Column="1" Background="Beige">Drop Here</TextBox>
     </Grid>
 </Window>
